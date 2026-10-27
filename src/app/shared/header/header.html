@@ -1,0 +1,19 @@
+<header>
+  <a class="brand" routerLink="/">
+    <img src="images/logo.svg" alt="New Age Militia Entertainment logo">
+    <span>NEW AGE<br>MILITIA<small>ENT.</small></span>
+  </a>
+
+  <button class="menu-button" (click)="toggleMenu()">Menu <i></i></button>
+
+  <nav [class.open]="menuOpen">
+    <a routerLink="/about" routerLinkActive="active"  (click)="menuOpen = false">About</a>
+    <a routerLink="/services" routerLinkActive="active" (click)="menuOpen = false">Services</a>
+    <a routerLink="/talents" routerLinkActive="active" (click)="menuOpen = false">Talents</a>
+    <a routerLink="/store" routerLinkActive="active" (click)="menuOpen = false">Store</a>
+    <a routerLink="/gallery" routerLinkActive="active" (click)="menuOpen = false">Gallery</a>
+    <a routerLink="/careers" routerLinkActive="active" (click)="menuOpen = false">Careers</a>
+    <a routerLink="/contact" routerLinkActive="active" (click)="menuOpen = false">Contact</a>
+    <a class="nav-cta" routerLink="/get-signed" routerLinkActive="active" (click)="menuOpen = false">Get Signed</a>
+  </nav>
+</header>

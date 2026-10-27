@@ -1,0 +1,22 @@
+header{height:84px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 5.5vw;justify-content:space-between;position:relative;background:#fff;z-index:5}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;line-height:.83;letter-spacing:.08em}
+.brand img{width:40px;height:40px;object-fit:cover;border-radius:50%;transition:transform .4s}
+.brand:hover img{transform:rotate(-8deg) scale(1.05)}
+.brand small{font-size:8px;letter-spacing:.2em;margin-left:3px;display:block}
+nav{display:flex;align-items:center;gap:22px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
+nav a{opacity:.55;position:relative;padding-bottom:4px;transition:opacity .2s}
+nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--sand);transition:width .25s ease}
+nav a:hover{opacity:1}
+nav a:hover::after, nav a.active::after{width:100%}
+nav a.active{opacity:1}
+.nav-cta{background:var(--sand);color:#0d0d0d!important;padding:9px 16px;opacity:1!important;transition:transform .25s,background .25s}
+.nav-cta:hover{background:#dcbf85;transform:translateY(-2px)}
+.nav-cta::after{display:none}
+.menu-button{display:none;border:0;background:none;font:700 12px 'DM Sans';text-transform:uppercase;letter-spacing:.1em;cursor:pointer}
+@media(max-width:900px){
+  header{padding:0 6vw}
+  nav{display:none;position:absolute;top:84px;left:0;width:100%;background:#111;padding:26px 6vw;gap:18px;flex-direction:column;align-items:flex-start}
+  nav.open{display:flex}
+  nav a{color:#fff}
+  .menu-button{display:block}
+}

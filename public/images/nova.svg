@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Nova portrait">
+  <defs>
+    <linearGradient id="novaBg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="url(#novaBg)"/>
+  <circle cx="200" cy="155" r="70" fill="#f4d7a8"/>
+  <path d="M108 302c13-42 48-68 92-68s79 26 92 68H108z" fill="#34d399"/>
+  <path d="M118 148l46-26 20 28 26-38 54 21-28 42 28 34-40 6-34-20-42 18-30-36z" fill="#f8fafc" opacity="0.9"/>
+  <circle cx="175" cy="155" r="5" fill="#111827"/>
+  <circle cx="225" cy="155" r="5" fill="#111827"/>
+  <path d="M180 190c10 10 30 10 40 0" stroke="#111827" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

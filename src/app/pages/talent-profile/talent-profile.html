@@ -1,0 +1,41 @@
+<div class="profile">
+  @if (talent) {
+    <article class="profile-card">
+      <div class="profile-image-wrap">
+        <img [src]="talent.image" [alt]="talent.name" />
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow">Featured artist</p>
+        <h1>{{ talent.name }}</h1>
+        <p class="role">{{ talent.role }}</p>
+        <p class="detail-line"><strong>Based in:</strong> {{ talent.location }} <span>•</span> <strong>Availability:</strong> {{ talent.availability }}</p>
+        <p>{{ talent.bio }}</p>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <span>Specialties</span>
+            <ul>
+              @for (item of talent.specialties; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </div>
+
+          <div class="meta-box">
+            <span>Current focus</span>
+            <p>Brand partnerships, live showcases, and creative collaborations designed to elevate the artist’s presence.</p>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <a routerLink="/contact" class="btn btn-primary">Book this artist</a>
+          <a routerLink="/talents" class="btn btn-outline">Back to roster</a>
+        </div>
+      </div>
+    </article>
+  } @else {
+    <div class="profile-card empty-state">
+      <p>Talent not found.</p>
+    </div>
+  }
+</div>

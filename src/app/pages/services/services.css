@@ -1,0 +1,145 @@
+.services-page {
+  padding: 80px 5.5vw 90px;
+}
+
+.services-header {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.services-header h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.04;
+}
+
+.services-header p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-bottom: 38px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 22px var(--shadow);
+}
+
+.service-card h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.service-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.services-process {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  margin-bottom: 38px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px;
+}
+
+.process-copy h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.process-copy p {
+  color: var(--muted);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.process-steps article {
+  background: rgba(245, 240, 232, 0.8);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.process-steps span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--sand-deep);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.process-steps h3 {
+  margin-bottom: 10px;
+}
+
+.process-steps p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.services-banner {
+  background: linear-gradient(135deg, #171513, #2b261f);
+  color: #f5efe7;
+  border-radius: 24px;
+  padding: 30px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.services-banner h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.services-banner p {
+  margin-bottom: 0;
+  color: rgba(245, 239, 231, 0.8);
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+}
+
+.btn-primary {
+  background: var(--sand);
+  color: #171513;
+}
+
+@media (max-width: 760px) {
+  .services-process,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}

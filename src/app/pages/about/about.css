@@ -1,0 +1,128 @@
+.about-hero {
+  padding: 100px 5.5vw 60px;
+  max-width: 740px;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.about-hero p {
+  font-size: 1.04rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.about-story {
+  padding: 60px 5.5vw;
+  background: #faf8f4;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.story-text {
+  max-width: 640px;
+}
+
+.story-text h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--sand);
+  margin-bottom: 12px;
+}
+
+.story-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.story-stats {
+  display: grid;
+  gap: 18px;
+}
+
+.story-stats div {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+.story-stats strong {
+  display: block;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 10px;
+  color: var(--sand-deep);
+}
+
+.story-stats span {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 70px 5.5vw;
+}
+
+.value {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.value h3 {
+  font-size: 28px;
+  color: var(--sand);
+  margin-bottom: 10px;
+}
+
+.value p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.about-panels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  padding: 0 5.5vw 90px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 12px 24px rgba(15, 15, 15, 0.04);
+}
+
+.panel h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.panel p {
+  color: var(--muted);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .about-story,
+  .about-panels {
+    grid-template-columns: 1fr;
+  }
+}

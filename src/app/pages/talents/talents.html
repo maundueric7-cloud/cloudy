@@ -1,0 +1,30 @@
+<section class="roster-intro">
+  <p class="eyebrow">Roster</p>
+  <h1>Artists with a point of view.</h1>
+  <p>We spotlight creators who bring originality, discipline, and stage presence to every performance. Each artist is developed with a clear creative identity, a thoughtful rollout strategy, and a long-term vision.</p>
+</section>
+
+<section class="roster-highlights">
+  <article class="highlight-card">
+    <h3>Creative direction</h3>
+    <p>We shape performance narratives, visual identity, and content strategy around what makes each artist distinct.</p>
+  </article>
+  <article class="highlight-card">
+    <h3>Live opportunities</h3>
+    <p>From showcases and brand moments to featured sets and tailored bookings, we create the right stage for the work.</p>
+  </article>
+  <article class="highlight-card">
+    <h3>Long-term growth</h3>
+    <p>Our work is designed to sustain momentum, not just create a single headline moment.</p>
+  </article>
+</section>
+
+<section class="roster">
+  @if (talents.length === 0) {
+    <p>No talent signed yet — check back soon.</p>
+  } @else {
+    @for (talent of talents; track talent.slug) {
+      <app-talent-card [talent]="talent" />
+    }
+  }
+</section>

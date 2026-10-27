@@ -1,0 +1,23 @@
+<section class="hero">
+  <h1>We Build Careers,<br>Not Just Contracts.</h1>
+  <p>New Age Militia is a full-service talent agency representing vocalists, producers, and performers ready for the next stage.</p>
+  <div class="hero-actions">
+    <a routerLink="/talents" class="btn btn-primary">Meet the Roster</a>
+    <a routerLink="/get-signed" class="btn btn-outline">Get Signed</a>
+  </div>
+</section>
+
+<section class="featured">
+  <h2>Featured Talent</h2>
+  <div class="featured-grid">
+    @for (talent of featured; track talent.slug) {
+      <app-talent-card [talent]="talent" />
+    }
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Think you've got what it takes?</h2>
+  <a routerLink="/get-signed" class="btn btn-primary">Submit Your Work</a>
+</section>
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="New Age Militia Entertainment logo">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#2b2d42"/>
+    </linearGradient>
+    <linearGradient id="logoGlow" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#logoBg)"/>
+  <circle cx="100" cy="72" r="42" fill="rgba(255,255,255,0.08)"/>
+  <path d="M54 148V52h18l26 42 26-42h18v96h-18V94l-26 42-26-42v54H54z" fill="#fff"/>
+  <path d="M118 38h18l20 36-18 10-20-36z" fill="url(#logoGlow)" opacity="0.9"/>
+  <circle cx="138" cy="54" r="9" fill="#f8fafc"/>
+</svg>
